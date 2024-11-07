@@ -46,7 +46,8 @@ int main (void)
 	{
 
 		//TOGGLE GPIOA PIN5
-		GPIOA_OD_R |= LED_PIN;
+		GPIOA_OD_R ^= LED_PIN;
+		for (int i =0;i<100000;i++){}
 	}
 
 }
